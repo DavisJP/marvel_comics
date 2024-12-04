@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:marvel_comics/src/characters/domain/model/marvel_character.dart';
 import 'package:marvel_comics/src/characters/presentation/details/character_details_page.dart';
 import 'package:marvel_comics/src/characters/presentation/list/bloc/character_list_bloc.dart';
@@ -30,7 +31,7 @@ class TabbedPage extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("Marvel Comics"),
+          title: Text(AppLocalizations.of(context)!.appTitle),
           bottom: const TabBar(
             tabs: [
               Tab(text: "Characters"),
