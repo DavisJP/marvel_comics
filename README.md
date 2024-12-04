@@ -20,7 +20,10 @@ build_runner: dart run build_runner build --delete-conflicting-outputs
 - Run the `main.dart` file
 
 ## Requirements
+- Flutter 3.24.3
+- Dart 3.5.3
 - Project developed with Android Studio Ladybug | 2024.2.1
+- Tested on Android and iOs
 
 ## Libraries used
 
