@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:marvel_comics/src/characters/presentation/list/character_list_page.dart';
 
-import 'characters/character_details_page.dart';
-import 'characters/character_list_page.dart';
+import 'characters/presentation/details/character_details_page.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
 
@@ -44,7 +44,9 @@ class MyApp extends StatelessWidget {
                   case SettingsView.routeName:
                     return SettingsView(controller: settingsController);
                   case CharacterDetailsPage.routeName:
-                    return const CharacterDetailsPage();
+                    final arguments =
+                        routeSettings.arguments as Map<String, dynamic>;
+                    return CharacterDetailsPage(arguments['characterId']);
                   case CharacterListPage.routeName:
                   default:
                     return const CharacterListPage();

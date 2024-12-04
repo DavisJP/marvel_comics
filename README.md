@@ -2,11 +2,12 @@
 
 Marvel Comics app.
 
-## How to run the app
+## Description
 
 This app uses the [Marvel Comics apis](https://developer.marvel.com), available in the [list of public apis](https://github.com/public-apis/public-apis?tab=readme-ov-file#games--comics)
 
-Generate an API key to run the project.
+- Two tabs, one showing a paginated list and the other showing a dashboard with summary information.
+- Clicking on an item in the list redirects to a details page.
 
 ## Libraries used
 
