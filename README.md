@@ -13,9 +13,9 @@ This app uses the [Marvel Comics apis](https://developer.marvel.com), available 
 ```sh
 flutter pub get
 ```
-- If the project is not recognizing any files regenerate the files:
+- If the project is not recognizing any files regenerate the files with build_runner:
 ```sh
-build_runner: dart run build_runner build --delete-conflicting-outputs
+dart run build_runner build --delete-conflicting-outputs
 ```
 - Run the `main.dart` file
 
